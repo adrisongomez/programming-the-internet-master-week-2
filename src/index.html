@@ -6,9 +6,80 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>My First Web Page</title>
   </head>
-  <body>
-    <h1>Welcome to my first web page! 2</h1>
-    <p>This is a paragraph of text.</p>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="min-h-screen flex flex-col">
+    <header class="border-b-1 pb-1"></header>
+      <nav class="flex w-full m-auto gap-6">
+        <href>About us</href>
+        <href>Contact</href>
+        <href>Blog</span>
+      </nav>
+      <menu></menu>
+    </header>
+    <main class="flex-1 w-4xl m-auto block bg-[tomato]"></main>
+    <footer class="w-full flex flex-col">
+      <div class="w-full">
+        <div id="footer-column-1">
+          <h4>Follow us</h4>
+          <div id="social">
+            <span>Facebook Logo</span>
+            <span>Instagram Logo</span>
+            <span>Youtube Logo</span>
+            <span>Telegram Logo</span>
+          </div>
+          <h4>Get access to exclusive offers and deals</h4>
+          <form>
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="userEmail"
+              id="userEmail"
+            />
+            <button type="submit" class="text-upper">subscribe</button>
+          </form>
+        </div>
+        <div id="footer-column-2">
+          <h4>About us</h4>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Contact</a></li>
+            <li><a>Sustainability</a></li>
+            <li><a>Press</a></li>
+          </ul>
+        </div>
+        <div id="footer-column-3">
+          <h4>Help and support</h4>
+          <ul>
+            <li><a>Delivery</a></li>
+            <li><a>Payments</a></li>
+            <li><a>Whatsapp Contact</a></li>
+            <li><a>Care Instructions</a></li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
+        <div id="footer-column-4">
+          <h4>Term of use</h4>
+          <ul>
+            <li><a>Warranty</a></li>
+            <li><a>Return Policy</a></li>
+            <li><a>Company Details</a></li>
+          </ul>
+        </div>
+        <div id="footer-column-5">
+          <h4>Why HLI LIGHT?</h4>
+          <ul>
+            <li><a>Free Shipping</a></li>
+            <li><a>Play by invoice</a></li>
+            <li><a>Return Within 365 Days</a></li>
+            <li><a>Up to 70% Discounts</a></li>
+            <li><a>Warranty up to 5 years</a></li>
+          </ul>
+        </div>
+        <div class="flex w-full justify-between">
+          <caption>&copy; 2022 HLI Light. All rights reseverd</caption>
+          <img src="" width="60px">
+          <caption>Design | Pazyah Sergey</caption>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
