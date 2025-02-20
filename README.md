@@ -1,6 +1,6 @@
 # Programming The Internet: Week 2 Exercise
 
-## Project Requirement
+## Requerimientos del proyecto
 
 - La página debe incluir varios elementos de HTML5, como etiquetas semánticas, formularios con validación, video, audio o canvas.
 - Implementar CSS3 para el diseño, incluyendo selectores avanzados, animaciones y transiciones.
@@ -9,37 +9,37 @@
 - La página debe ser no solo funcional sino también estéticamente atractiva.
 - Incluir interactividad y creatividad en el diseño para demostrar comprensión de las capacidades de HTML5 y CSS3.
 
-## Requirement Software:
-- `node` version: `v22.13.1` or `nvm`
-- `pnpm` package manager
+## Requisitos de software:
+- `node` version: [`v22.13.1`](https://nodejs.org/en/download) or [`nvm`](https://github.com/nvm-sh/nvm)
+- [`pnpm`](https://pnpm.io/installation) package manager
 
-## Getting started
+## Inicializar el proyecto
 
-*Optional*: If you have `nvm` install on your computer, just run `nvm install` and nvm would install the proper node version for the project.
+*Opcional*: Si posee `nvm` instalado, corra `nvm install` and `nvm` se encargara de instalar la version correcta de `node`.
 
 1- Run `pnpm install` to install all dependecies of the project.
 2- Run `pnpm start` to run an HTTP Server on `http://localhost:8080`
 
 
-## Key Notes:
+## Notas:
 
-For CSS framework, I'm using Tailwind using the CDN installation. The idea of this project is showcasing the use of `HTML5` so it's not need it to add an extra build step. but in case of real scenario, it would be better to use the compiler version due to it produces less CSS than using the CDN which could affect website performance.
+Como CSS Framework, utilize [TailwindCSS](https://tailwindcss.com/docs/installation/play-cdn) pero utilizando la version del CDN. Como la idea del proyecto es hacer la demostracion de una pagina web estilo MPA (*Multi-page Application*) decide utilizar la version de CDN ya que no necesita un buildstep. Pero considero que la version que incluye instalar varias depencias y crear un build step es superior ya que permite reducir la cantidad de CSS que la pagina tiene que cargar.
 
-Also this project is also focus to use vanilla.js (just to challenge me a little bit) so not Jquery or bundle tool would be use on this project. JUST PURE JS, CSS and HTML.
+Cabe destacar que este proyecto esta en focado en desmostrar el uso de HTML5. Por lo tanto solo se utilizara HTML, CSS y JS. Como reto personal tratare de realizar el proyecto solo en vanilla.js.
 
-The design of this project are just a copy from a [public project](https://www.behance.net/gallery/154022259/Ecommerce-UIUX-site-Web-design-?tracking_source=search_projects|Ecommerce+Site+web+design&l=3) on [Behance by Sergey Pazych](Sergey Pazych). The design only provide concept idea of what it's being build and not assets is being provide so I'll pick up whatever public image, video or assets from internet (I don't know this dude, but he is good look his public projects, they are good.)
+Los diseño del proyecto se inspiran de este [proyecto publico](https://www.behance.net/gallery/154022259/Ecommerce-UIUX-site-Web-design-?tracking_source=search_projects|Ecommerce+Site+web+design&l=3) en [Behance por Sergey Pazych](https://www.behance.net/pazychsergey). El diseño solo provee conceptos e ideas del productos final. (No se quien es este men pero se ve que es duro en lo que hace.)
 
-## Project Structure
+## Estructura del proyecto
 
-- `src/`: Hold all the Source Code and it's what the HTTP Server serve
-- `src/assets`: every piece of public assets is store here.
-    - `src/assets/styles/`: Have all the css files.
-    - `src/assets/js/`: Have all the javascript files.
-    - `src/assets/images/`: have all the images on the site. 
-- `src/pages`: hold the HTML pages. Keep in mind this project is MPA so each page would be represent by an HTML file on this directory following the routing of the site. For example `pages/about` -> src/pages/about.html
-- `package.json`: hold the dependencies and the script to start up the project
-- `pnpm-lock.yaml`: hold lock specs from package.json **DO NOT DELETE OR MODIFY THAT FILE*
-- `README.md`: serves as documentation for the project.
+- `src/`: Es la carpeta principal donde se mantiene todo el codigo y los assets del proyectos
+- `src/assets`: cada piece de contenido que la pagina necesita .
+    - `src/assets/styles/`: Contiene todos los archivo CSS. (En caso de ser necesario)
+    - `src/assets/js/`: Contine todos los archivos javascript.
+    - `src/assets/images/`: Contiene todas las imagenes del proyectos. 
+- `src/pages`: Contiene todos los archivos HTML tratando de mantener el routing de la pagina
+- `package.json`: Contiene las especificaciones y dependecias del proyecto.
+- `pnpm-lock.yaml`: Es un archivo generado a partir del `package.json` por `pnpm`. **NO BORRAR, NI MODIFICAR**
+- `README.md`: sirve como documentacion del proyecto
 
 
 Happy Coding BROH! 👊😎
