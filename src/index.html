@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>My First Web Page</title>
-  </head>
-  <body class="min-h-screen flex flex-col">
-    <header class="border-b-1 pb-1"></header>
-      <nav class="flex w-full m-auto gap-6">
-        <href>About us</href>
-        <href>Contact</href>
-        <href>Blog</span>
-      </nav>
-      <menu></menu>
-    </header>
-    <main class="flex-1 w-4xl m-auto block bg-[tomato]"></main>
-    <footer class="w-full flex flex-col">
-      <div class="w-full">
-        <div id="footer-column-1">
-          <h4>Follow us</h4>
-          <div id="social">
-            <span>Facebook Logo</span>
-            <span>Instagram Logo</span>
-            <span>Youtube Logo</span>
-            <span>Telegram Logo</span>
-          </div>
-          <h4>Get access to exclusive offers and deals</h4>
-          <form>
-            <input
-              type="email"
-              placeholder="E-mail"
-              name="userEmail"
-              id="userEmail"
-            />
-            <button type="submit" class="text-upper">subscribe</button>
-          </form>
-        </div>
-        <div id="footer-column-2">
-          <h4>About us</h4>
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Sustainability</a></li>
-            <li><a>Press</a></li>
-          </ul>
-        </div>
-        <div id="footer-column-3">
-          <h4>Help and support</h4>
-          <ul>
-            <li><a>Delivery</a></li>
-            <li><a>Payments</a></li>
-            <li><a>Whatsapp Contact</a></li>
-            <li><a>Care Instructions</a></li>
-            <li><a>FAQ</a></li>
-          </ul>
-        </div>
-        <div id="footer-column-4">
-          <h4>Term of use</h4>
-          <ul>
-            <li><a>Warranty</a></li>
-            <li><a>Return Policy</a></li>
-            <li><a>Company Details</a></li>
-          </ul>
-        </div>
-        <div id="footer-column-5">
-          <h4>Why HLI LIGHT?</h4>
-          <ul>
-            <li><a>Free Shipping</a></li>
-            <li><a>Play by invoice</a></li>
-            <li><a>Return Within 365 Days</a></li>
-            <li><a>Up to 70% Discounts</a></li>
-            <li><a>Warranty up to 5 years</a></li>
-          </ul>
-        </div>
-        <div class="flex w-full justify-between">
-          <caption>&copy; 2022 HLI Light. All rights reseverd</caption>
-          <img src="" width="60px">
-          <caption>Design | Pazyah Sergey</caption>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header class="p-2 flex flex-row justify-between">
+    <nav class="flex w-full m-auto gap-6">
+      <href>About us</href>
+      <href>Contact</href>
+      <href>Blog</span>
+    </nav>
+    <div>
+      <i class="fas fa-phone text-2xl text-blue-500"></i>
+    </div>
+    <menu></menu>
+  </header>
+  <main class="flex-1 w-4xl m-auto block bg-transparent">
+    <section id="main-hero" class="w-full relative">
+      <img src="#" alt="Main Hero Image" />
+      <div class="top-0 right-0 flex flex-col justify-center items-center">
+
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="w-full flex md:px-12 md:py-8 bg-(--bg-light) gap-6">
+    <div id="footer-column-1" class="flex-2 flex flex-col gap-4 w-full">
+      <h4 class="uppercase text-[16px] font-bold">Follow us</h4>
+      <div id="social" class="text-black flex-row flex gap-4">
+        <span class="p-2 w-[32px] h-[32px] flex items-center justify-center rounded-full"><i
+            class="fab fa-facebook"></i></span>
+        <span class="p-2 w-[32px] h-[32px] flex items-center justify-center rounded-full"><i
+            class="fab fa-instagram"></i></span>
+        <span class="p-2 w-[32px] h-[32px] flex items-center justify-center rounded-full"><i
+            class="fab fa-youtube"></i></span>
+        <span class="p-2 w-[32px] h-[32px] flex items-center justify-center rounded-full"><i
+            class="fab fa-telegram"></i></span>
+      </div>
+      <h4 class="uppercase text-[16px] font-bold">Get access to exclusive offers and deals</h4>
+      <form class="flex w-full">
+        <input class="p-3 flex-1 placeholder:text-gray text-black rounded-xs bg-white" type="email" placeholder="E-mail"
+          name="userEmail" id="userEmail" />
+        <button class="cursor-pointer bg-(--btn-bg) px-5 text-white" type="submit" class="text-upper">Subscribe</button>
+      </form>
+    </div>
+    <div id="footer-column-2" class="flex-1">
+      <h4 class="uppercase text-[16px] font-bold">About us</h4>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Sustainability</a></li>
+        <li><a>Press</a></li>
+      </ul>
+    </div>
+    <div id="footer-column-3" class="flex-1">
+      <h4 class="uppercase text-[16px] font-bold">Help and support</h4>
+      <ul>
+        <li><a>Delivery</a></li>
+        <li><a>Payments</a></li>
+        <li><a>Whatsapp Contact</a></li>
+        <li><a>Care Instructions</a></li>
+        <li><a>FAQ</a></li>
+      </ul>
+    </div>
+    <div id="footer-column-4" class="flex-1">
+      <h4 class="uppercase text-[16px] font-bold">Term of use</h4>
+      <ul>
+        <li><a>Warranty</a></li>
+        <li><a>Return Policy</a></li>
+        <li><a>Company Details</a></li>
+      </ul>
+    </div>
+    <div id="footer-column-5" class="flex-1">
+      <h4 class="uppercase text-[16px] font-bold">Why HLI LIGHT?</h4>
+      <ul>
+        <li><a>Free Shipping</a></li>
+        <li><a>Play by invoice</a></li>
+        <li><a>Return Within 365 Days</a></li>
+        <li><a>Up to 70% Discounts</a></li>
+        <li><a>Warranty up to 5 years</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="px-12 flex w-full mt-2 justify-between color-neutral-100 text-xs">
+    <caption>&copy; 2022 HLI Light. All rights reseverd</caption>
+    <img src="" width="60px">
+    <caption>Design | Pazyah Sergey</caption>
+  </div>
+</body>
+
 </html>
