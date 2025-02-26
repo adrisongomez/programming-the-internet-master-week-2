@@ -52,3 +52,14 @@ Los diseño del proyecto se inspiran de este [proyecto publico](https://www.beha
 - `README.md`: sirve como documentacion del proyecto
 
 Happy Coding BROH! 👊😎
+
+
+## Demo videos
+
+### Desktop
+https://github.com/user-attachments/assets/868e7980-f48d-4221-af82-48085cdec441
+
+### Mobile
+https://github.com/user-attachments/assets/bf8f832a-9bbf-41f6-ae35-76858e6cf051
+
+
