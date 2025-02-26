@@ -17,25 +17,34 @@
 
 <body class="min-h-screen flex flex-col">
   <header class="p-2 flex flex-row justify-between">
-    <nav class="flex w-full m-auto gap-6">
+    <nav class="flex gap-6">
       <href>About us</href>
       <href>Contact</href>
       <href>Blog</span>
     </nav>
-    <div>
-      <i class="fas fa-phone text-2xl text-blue-500"></i>
+    <div class="flex items-center flex-row no-wrap gap-2">
+      <i class="fas fa-mobile-alt text-(--bg-dark)"></i>
+      <span>123 456 7891</span>
     </div>
-    <menu></menu>
   </header>
-  <main class="flex-1 w-4xl m-auto block bg-transparent">
-    <section id="main-hero" class="w-full relative">
-      <img src="#" alt="Main Hero Image" />
-      <div class="top-0 right-0 flex flex-col justify-center items-center">
-
+  <main class="flex-1 max-w-7xl w-full p-6 m-auto block bg-transparent">
+    <section id="main-hero" class="w-full gap-12 lg:items-center flex lg:flex-row md:flex-col mb-12">
+      <img class="md:w-xl sm:w-full"
+        src="./assets/images/table-lamp-for-bedroom-and-drawing-room-big-gola-with-blue-original-imafyuwnuuxcypg9.webp"
+        alt="Main Hero Image" />
+      <div class="gap-6 flex flex-col items-start">
+        <h2 class="text-7xl font-bold">Lights up Your Home</h2>
+        <p class="text-(--text-accent) text-lg">They can easily highlight your dining room decor and area a great
+          accessory.</p>
+        <button class="uppercase cursor-pointer bg-(--btn-bg) px-5 py-2 text-[white] text-lg">Read more</button>
       </div>
     </section>
+    <section class="w-full xl:flex-row md:flex-col xl:gap-6 md:gap-3">
+      <h3 class="uppercase text-2xl text-(--text-accent)">Products</h3>
+      <div id="collection-section" class="flex-1 flex flex-wrap gap-6 mt-6"></div>
+    </section>
   </main>
-  <footer class="w-full flex md:px-12 md:py-8 bg-(--bg-light) gap-6">
+  <div id="footer" class="w-full flex px-12 py-8 bg-(--bg-light) gap-6 flex-col md:flex-row ">
     <div id="footer-column-1" class="flex-2 flex flex-col gap-4 w-full">
       <h4 class="uppercase text-[16px] font-bold">Follow us</h4>
       <div id="social" class="text-black flex-row flex gap-4">
@@ -50,9 +59,9 @@
       </div>
       <h4 class="uppercase text-[16px] font-bold">Get access to exclusive offers and deals</h4>
       <form class="flex w-full">
-        <input class="p-3 flex-1 placeholder:text-gray text-black rounded-xs bg-white" type="email" placeholder="E-mail"
+        <input class="p-3 flex-1 placeholder:text-slate-900 rounded-xs bg-white" type="email" placeholder="E-mail"
           name="userEmail" id="userEmail" />
-        <button class="cursor-pointer bg-(--btn-bg) px-5 text-white" type="submit" class="text-upper">Subscribe</button>
+        <button class="uppercase cursor-pointer bg-(--btn-bg) px-5 text-white" type="submit">Subscribe</button>
       </form>
     </div>
     <div id="footer-column-2" class="flex-1">
@@ -92,12 +101,13 @@
         <li><a>Warranty up to 5 years</a></li>
       </ul>
     </div>
-  </footer>
-  <div class="px-12 flex w-full mt-2 justify-between color-neutral-100 text-xs">
+  </div>
+  <div class="px-12 flex w-full mt-2 justify-between text-neutral-900 text-xs">
     <caption>&copy; 2022 HLI Light. All rights reseverd</caption>
     <img src="" width="60px">
     <caption>Design | Pazyah Sergey</caption>
   </div>
+  <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>
